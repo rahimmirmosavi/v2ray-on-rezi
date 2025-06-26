@@ -1,0 +1,32 @@
+{
+  "log": {
+    "loglevel": "none"
+  },
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "67f9f451-9e98-4d2f-a567-a3fe4b2d35e9",
+            "level": 0,
+            "email": "rahim@example.com"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/v2ray"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
